@@ -1,0 +1,41 @@
+.discount_container{
+  row-gap: 3.5rem;
+  grid-template-columns: 610px 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.discount_data {
+  text-align: initial;
+  order: 1;
+}
+
+.discount_title {
+  text-align: initial;
+  margin-bottom: 1rem;
+}
+
+.discount_title a{
+  color: var(--accent-text-color);
+}
+
+.discount_images {
+  display: flex;
+  justify-content: center;
+}
+
+.discount_img_1, .discount_img_2 {
+  width: 240px;
+  height: 350px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.discount_img_1 {
+  transform: rotate(-10.02deg);
+}
+
+.discount_img_2 {
+  transform: rotate(10.02deg);
+  z-index: -1;
+}

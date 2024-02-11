@@ -1,0 +1,34 @@
+.review_container {
+  padding-top: 2rem;
+}
+  
+.review_card {
+  width: 320px;
+  height: 400px;
+  text-align: center;
+  background-color: var(--review-background);
+  padding: 2rem 3rem 2.5rem;
+  padding-inline: 2rem;
+  border: 2px solid var(--accent-text-color);
+  border-radius: 15px;
+  transition: border .4s, background-color .4s;
+}
+  
+.review_img {
+  width: 100px;
+  margin: 0 auto 1.5rem;
+}
+  
+.review_title {
+  font-size: var(--h3-font-size);
+  margin-bottom: .75rem;
+}
+  
+.review_description {
+  font-size: var(--normal-font-size);
+  margin-bottom: 1.25rem;
+}
+  
+.review_stars {
+  color: var(--main-text-color);
+}

@@ -1,0 +1,92 @@
+.login {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: var(--z-fixed);
+  background-image: linear-gradient(white 35%, transparent);
+  backdrop-filter: blur(15px);
+  align-items: center;
+  padding: 1.5rem;
+  text-align: center;
+  transition: top .4s;
+}
+
+.login_form {
+  width: 400px;
+  justify-self: center;
+  background-color: var(--body-background);
+  padding: 2rem 1.5rem;
+  border-radius: 20px;
+  row-gap: 1.25rem;
+}
+
+.login_title {
+  font-size: var(--h2-font-size);
+}
+
+.login_group {
+  row-gap: 1.25rem;
+}
+
+.login_label {
+  display: block;
+  text-align: initial;
+  color: var(--main-text-color);
+  font-weight: var(--font-medium);
+  margin-bottom: .25rem;
+}
+
+.login_input {
+  width: 100%;
+  background-color: rgba(97, 94, 81, 0.25);
+  border-radius: 15px;
+  padding: 1rem;
+  color: var(--main-text-color);
+}
+
+.login_input::placeholder {
+  color: var(--secondary-text-color);
+}
+
+.login_signup {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.login_signup a {
+  color: var(--accent-text-color);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+}
+
+.login_close {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
+.login_button {
+  cursor: pointer;
+}
+
+.login_close {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: var(--main-text-color);
+  cursor: pointer;
+}
+
+.show-login {
+  top: 0;
+}

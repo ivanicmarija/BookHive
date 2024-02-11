@@ -1,0 +1,137 @@
+/*GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto+Slab:wght@700&display=swap');
+
+/*VARIABLES CSS*/
+:root {
+  --header-height: 3.5rem;
+
+              /*Colors*/
+
+/*BACKGROUND COLORS*/
+  --body-background: #FFF8D6;
+  --best-seller-background: rgba(97, 94, 81, 0.25);
+  --new-release-background: #FFDD85;
+  --join-background: #6E5B51;
+  --review-background: #FEF2C5;
+
+/*TEXT COLORS*/
+  --main-text-color: #615E51;
+  --secondary-text-color: rgba(0, 0, 0, 0.25);
+  --accent-text-color: #FCAC5D;
+
+/*GRADIENT COLORS*/
+  --start-color: #FCCC5D;
+  --middle-color: #FCC75D;
+  --end-color: #FCAC5D;
+
+
+/*Font and typography*/
+/*.5rem = 8px | 1rem = 16px ...*/
+  --first-font: "Poppins", sans-serif;
+  --second-font: "Roboto Slab", serif;
+  --biggest-font-size: 3.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+                    /*Font weight*/
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+                    /*z index*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+                    /*BASIC*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, input, button {
+  font-family: var(--second-font);
+  font-size: var(--normal-font-size);
+}
+
+body {
+  background-color: var(--body-background);
+  color: var(--main-text-color);
+  transition: background-color .4s;
+}
+
+input, button {
+  border: none;
+  outline: none;
+}
+
+h1, h2, h3, h4 {
+  color: var(--main-text-color);
+  font-family: var(--first-font);
+  font-weight: var(--font-medium);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1220px;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 7rem 2rem;
+}
+
+.section_title {
+  text-align: center;
+  font-size: var(--h2-font-size);
+  font-family: var(--first-font);
+  color: var(--main-text-color);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+.button {
+  display: inline-block;
+  background-image: linear-gradient(to right, #FCCC5D 0%, #FCC75D 50%, #FCAC5D 100%);
+  color: var(--main-text-color);
+  font-family: var(--first-font);
+  font-weight: var(--font-semi-bold);
+  font-size: large;
+  padding: 10px 35px;
+  transition: box-shadow .4s;
+  border-radius: 10px;
+}
+
+.button:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+  color: var(--main-text-color);
+  text-decoration: none;
+}

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--FAVICON-->
+        <link rel="favicon" type="image/png" href="FOLLOWER/bee">
+
+        <!--FLATICON-->
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'>
+        
+        <!--SWIPER CSS-->
+        <link rel='stylesheet' href='STYLE/swiper-bundle.min.css'>
+
+        <!--CSS-->
+        <link rel="stylesheet" href="STYLE/style.css">
+        <link rel="stylesheet" href="STYLE/top_bar.css">
+        <link rel="stylesheet" href="STYLE/search.css">
+        <link rel="stylesheet" href="STYLE/login.css">
+        <link rel="stylesheet" href="STYLE/signup.css">
+        <link rel="stylesheet" href="STYLE/home.css">
+        <link rel="stylesheet" href="STYLE/services.css">
+        <link rel="stylesheet" href="STYLE/best_seller.css">
+        <link rel="stylesheet" href="STYLE/new_release.css">
+        <link rel="stylesheet" href="STYLE/discount.css">
+        <link rel="stylesheet" href="STYLE/subscribe.css">
+        <link rel="stylesheet" href="STYLE/review.css">
+        <link rel="stylesheet" href="STYLE/footer.css">
+        <link rel="stylesheet" href="STYLE/scroll_up.css">
+        
+        <title>BookHive</title>
+   </head>
+   <body>
+    <!--TOP BAR-->
+    <header class="topbar" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav_logo_title">
+                <img src="WEB ICONS/FAVICON/favicon_io/honeycomb.png">
+                <h1 class="book">Book</h1>
+                <h1 class="hive">Hive</h1>
+            </a>
+
+            <div class="nav_menu">
+                <ul class="nav_list">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active-link">
+                            <span>HOME</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#recommended" class="nav_link">
+                            <span>RECOMMENDED</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#discount" class="nav_link">
+                            <span>DISCOUNT</span>
+                        </a>
+                    </li>
+
+                    <li class="nav_item">
+                        <a href="#reviews" class="nav_link">
+                            <span>REVIEWS</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav_actions">
+                <!--SEARCH BUTTON-->
+                <i class="fi fi-br-search search_button" id="search-form-show"></i>
+
+                <!--LOGIN BUTTON-->
+                <i class="fi fi-br-user login_button" id="login-form-show"></i>
+
+                <!--CART BUTTON-->
+                <!--<i class="fi fi-br-shopping-bag cart_button" id="cart-button"></i>-->
+            </div>
+        </nav>
+    </header>
+
+    <!--SEARCH-->
+    <div class="search" id="search-content">
+        <form action="" class="search_form">
+            <i class="fi fi-br-search search_icon"></i>
+            <input type="search" placeholder="What are you buzzing for?" class="search_input">
+        </form>
+        <i class="fi fi-rs-circle-xmark search_close" id="search-close"></i>
+    </div>
+
+    <!--LOGIN-->
+    <div class="login grid" id="login-content">
+        <form action="" class="login_form">
+            <h3 class="login_title">Log in</h3>
+            <div class="login_group grid">
+                <div>
+                    <label for="login-email" class="login_label">Email</label>
+                    <input type="email" placeholder="Write your email" id="login-email" class="login_input">
+                </div>
+
+                <div>
+                    <label for="login-password" class="login_label">Password</label>
+                    <input type="password" placeholder="Enter your password" id="login-password" class="login_input">
+                </div>
+            </div>
+
+            <div>
+                <span class="login_signup" id="signup-form-show">
+                    You don't have an account? <a>Sign up</a>
+                </span>
+
+                <button type="submit" class="login_button button" id="login-button">LOG IN</button>
+            </div>
+        </form>
+
+        <i class="fi fi-rs-circle-xmark login_close" id="login-close"></i>
+    </div>
+
+    <!--SIGNUP-->
+    <div class="signup grid" id="signup-content">
+        <form action="" class="signup_form">
+            <h3 class="signup_title">Sign up</h3>
+            <div class="signup_group grid">
+
+                <div>
+                    <label for="signup-name" class="signup_label">Name</label>
+                    <input type="name" placeholder="Write your name" id="signup-name" class="signup_input">
+                </div>
+
+                <div>
+                    <label for="signup-email" class="signup_label">Email</label>
+                    <input type="email" placeholder="Write your email" id="signup-email" class="signup_input">
+                </div>
+
+                <div>
+                    <label for="signup-password" class="signup_label">Password</label>
+                    <input type="password" placeholder="Enter your password" id="signup-password" class="signup_input">
+                </div>
+
+            </div>
+
+            <div>
+                <button type="submit" class="signup_button button" id="signup-button">SIGN UP</button>
+            </div>
+
+        </form>
+
+        <i class="fi fi-rs-circle-xmark signup_close" id="signup-close"></i>
+    </div>
+
+    <!--MAIN-->
+    <main class="main">
+        <!--HOME-->
+        <section class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_data">
+
+                    <h1 class="home_title">
+                        Un<a href="#">bee</a>lievable reads<br>
+                        await at Book<a href="#">Hive</a>
+                    </h1>
+
+                    <p class="home_description">
+                        Explore our hive of literary wonders and dive into <br>
+                        enchanting tales that buzz with excitement. From <br>
+                        classics to contemporary bestsellers, find your next <br>
+                        favorite read at BookHive.
+                    </p>
+
+                    <a href="#recommended" class="button">EXPLORE NOW</a>
+                </div>
+
+                <div class="home_images">
+                    <div class="home_swiper swiper">
+                        <div class="swiper-wrapper">
+                            <article class="home_article swiper-slide">
+                                <img src="PHOTOS/BOOKS/HOME/bridgerton_book_2.jpg" alt="book_image" class="home_img">
+                            </article>
+
+                            <article class="home_article swiper-slide">
+                                <img src="PHOTOS/BOOKS/HOME/hp_Half_Blood_Prince.jpg" alt="book_image" class="home_img">
+                            </article>
+
+                            <article class="home_article swiper-slide">
+                                <img src="PHOTOS/BOOKS/HOME/psycho.jpg"book_image" class="home_img">
+                            </article>
+
+                            <article class="home_article swiper-slide">
+                                <img src="PHOTOS/BOOKS/HOME/the_fault_in_our_stars.jpg" alt="book_image" class="home_img">
+                            </article>
+
+                            <article class="home_article swiper-slide">
+                                <img src="PHOTOS/BOOKS/HOME/hp_Prisoner_of_Azkaban.jpg" alt="book_image" class="home_img">
+                            </article>
+
+                            <article class="home_article swiper-slide">
+                                <img src="PHOTOS/BOOKS/HOME/the_princess_diaries.jpg" alt="book_image" class="home_img">
+                            </article>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--SERVICES-->
+        <section class="services section">
+            <div class="services_container container grid">
+                <article class="services_card">
+                    <i> <img src="WEB ICONS/ICONS/delivery-truck-1.png" alt="image"> </i>
+                    <h3 class="services_title">FREE SHIPPING</h3>
+                    <p class="services_description">Order more than € 30</p>
+                </article>
+
+                <article class="services_card">
+                    <i> <img src="WEB ICONS/ICONS/padlock.png" alt="image"> </i>
+                    <h3 class="services_title">100% SECURE<br>PAYMENT</h3>
+                    <p class="services_description"></p>
+                </article>
+
+                <article class="services_card">
+                    <i> <img src="WEB ICONS/ICONS/people.png" alt="image"> </i>
+                    <h3 class="services_title">80+ MILLION<br>PEOPLE SERVED</h3>
+                    <p class="services_description"></p>
+                </article>
+            </div>
+        </section>
+
+        <!--RECOMMENDED-->
+        <section class="recommended section" id="recommended">
+            <h2 class="section_title">Best Sellers</h2>
+            <div class="best_seller_container container">
+                <div class="best_seller_swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="best_seller_card swiper-slide">
+                            <img src="PHOTOS/BOOKS/BEST SELLERS/carrie.jpg" alt="image" class="best_seller_img">
+                            <h2 class="best_seller_title">CARRIE</h2>
+                            <span class="best_seller_price">€ 13.05</span>
+                            <button class="button">ADD TO CART</button>
+                        </article>
+
+                        <article class="best_seller_card swiper-slide">
+                            <img src="PHOTOS/BOOKS/BEST SELLERS/dear_martin.jpg" alt="image" class="best_seller_img">
+                            <h2 class="best_seller_title">DEAR MARTIN</h2>
+                            <span class="best_seller_price">€ 20.93</span>
+                            <button class="button">ADD TO CART</button>
+                        </article>
+
+                        <article class="best_seller_card swiper-slide">
+                            <img src="PHOTOS/BOOKS/BEST SELLERS/gone_girl.jpg" alt="image" class="best_seller_img">
+                            <h2 class="best_seller_title">GONE GIRL</h2>
+                            <span class="best_seller_price">€ 12.74</span>
+                            <button class="button">ADD TO CART</button>
+                        </article>
+
+                        <article class="best_seller_card swiper-slide">
+                            <img src="PHOTOS/BOOKS/BEST SELLERS/hunger_games.jpg" alt="image" class="best_seller_img">
+                            <h2 class="best_seller_title">HUNGER GAMES<br>(BOOK #1)</h2>
+                            <span class="best_seller_price">€ 14.90</span>
+                            <button class="button">ADD TO CART</button>
+                        </article>
+
+                        <article class="best_seller_card swiper-slide">
+                            <img src="PHOTOS/BOOKS/BEST SELLERS/hunger_games_catching_fire.jpg" alt="image" class="best_seller_img">
+                            <h2 class="best_seller_title">CATCHING FIRE<br>(HUNGER GAMES #2)</h2>
+                            <span class="best_seller_price">€ 15.75</span>
+                            <button class="button">ADD TO CART</button>
+                        </article>
+
+                        <article class="best_seller_card swiper-slide">
+                            <img src="PHOTOS/BOOKS/BEST SELLERS/hunger_games_mockingjay.jpg" alt="image" class="best_seller_img">
+                            <h2 class="best_seller_title">MOCKINGJAY<br>(HUNGER GAMES #3)</h2>
+                            <span class="best_seller_price">€ 21.45</span>
+                            <button class="button">ADD TO CART</button>
+                        </article>
+
+                        <article class="best_seller_card swiper-slide">
+                            <img src="PHOTOS/BOOKS/BEST SELLERS/the_ballad_of_songbirds_and_snakes.jpg" alt="image" class="best_seller_img">
+                            <h2 class="best_seller_title">THE BALLAD OF<br>SONGBIRDS AND SNAKES</h2>
+                            <span class="best_seller_price">€ 11.50</span>
+                            <button class="button">ADD TO CART</button>
+                        </article>
+
+                        <article class="best_seller_card swiper-slide">
+                            <img src="PHOTOS/BOOKS/BEST SELLERS/the_haunting_of_hill_house.jpg" alt="image" class="best_seller_img">
+                            <h2 class="best_seller_title">THE HAUNTING OF<br>HILL HOUSE</h2>
+                            <span class="best_seller_price">€ 12.74</span>
+                            <button class="button">ADD TO CART</button>
+                        </article>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="fi fi-br-angle-small-left"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="fi fi-br-angle-small-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section_title">New Releases</h2>
+            <div class="new_release_container container">
+                <div>
+                    <div class="new_release_card">
+                        <a href="PHOTOS/BOOKS/NEW RELEASES/a_day_of_fallen_night.jpg">
+                            <img src="PHOTOS/BOOKS/NEW RELEASES/a_day_of_fallen_night.jpg" alt="book_image" class="new_release_img">
+                        </a>
+                        <div class="new_release_content">
+                            <h2 class="new_release_title">A DAY OF<br>FALLEN NIGHT</h2>
+                            <span class="new_release_price">€ 32.12</span>
+
+                            <div class="new-release_stars">
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-rr-star-sharp-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="new_release_card">
+                        <a href="PHOTOS/BOOKS/NEW RELEASES/iron_flame.jpg">
+                            <img src="PHOTOS/BOOKS/NEW RELEASES/iron_flame.jpg" alt="book_image" class="new_release_img">
+                        </a>
+                        <div class="new_release_content">
+                            <h2 class="new_release_title">IRON FLAME</h2>
+                            <span class="new_release_price">€ 19.79</span>
+
+                            <div class="new-release_stars">
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-rr-star-sharp-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="new_release_card">
+                        <a href="PHOTOS/BOOKS/NEW RELEASES/spare.jpg">
+                            <img src="PHOTOS/BOOKS/NEW RELEASES/spare.jpg" alt="book_image" class="new_release_img">
+                        </a>
+                        <div class="new_release_content">
+                            <h2 class="new_release_title">SPARE</h2>
+                            <span class="new_release_price">€ 10.50</span>
+
+                            <div class="new-release_stars">
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-rr-star-sharp-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="new_release_card">
+                        <a href="PHOTOS/BOOKS/NEW RELEASES/the_only_one_left.jpg">
+                            <img src="PHOTOS/BOOKS/NEW RELEASES/the_only_one_left.jpg" alt="book_image" class="new_release_img">
+                        </a>
+                        <div class="new_release_content">
+                            <h2 class="new_release_title">THE ONLY<br>ONE LEFT</h2>
+                            <span class="new_release_price">€ 19.68</span>
+
+                            <div class="new-release_stars">
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-rr-star-sharp-half-stroke"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--DISCOUNT-->
+        <section class="discount section" id="discount">
+            <div class="discount_container container grid">
+                <div class="discount_data">
+                    <h2 class="discount_title section_title">
+                        Enjoy a <a href="#">40%</a> <br>
+                        honey-dipped <br>
+                        discount on <br>
+                        all books!
+                    </h2>
+                </div>
+
+                <div class="discount_images">
+                    <img src="PHOTOS/BOOKS/DISCOUNT/the_murder_of_roger_ackroyd.jpg" alt="book_image" class="discount_img_1">
+                    <img src="PHOTOS/BOOKS/DISCOUNT/bridgerton_book_5.jpg" alt="book_image" class="discount_img_2">
+                </div>
+
+            </div>
+        </section>
+
+        <!--SUBSCRIBE-->
+        <section class="subscribe section">
+            <div class="subscribe_container">
+                <img src="PHOTOS/email_sub_background.jpg" alt="image" class="subscribe_background">
+
+                <div class="subscribe_data container grid">
+                    <h2 class="subscribe_title section_title">
+                        <a href="#">Bee</a> the first to know <br>
+                        about new arrivals <br>
+                        and discounts!
+                    </h2>
+
+                    <form action="" class="subscribe_form">
+                        <input type="email" placeholder="Enter email" class="subscribe_input">
+                        <button type="submit" class="subscribe_button button">SUBSCRIBE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--REVIEWS-->
+        <section class="review section" id="reviews">
+            <h2 class="section_title">Customer reviews</h2>
+            <div class="review_container container">
+                <div class="review_swiper swiper">
+                    <div class="swiper-wrapper">
+                        <artical class="review_card swiper-slide">
+                            <img src="PHOTOS/REVIEW/001-man.png" alt="image" class="review_img">
+                            <h2 class="review_title">Oliver Smith</h2>
+                            <p class="review_description">
+                                This book-selling platform impresses with
+                                exceptional book quality and lightning-fast
+                                shipping, exceeding expectations. Their
+                                commitment to delivering top-notch
+                                products swiftly earns them high praise
+                                and recommendation.
+                            </p>
+
+                            <div class="review_stars">
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-rr-star-sharp-half-stroke"></i>
+                            </div>
+                        </artical>
+
+                        <artical class="review_card swiper-slide">
+                            <img src="PHOTOS/REVIEW/015-woman.png" alt="image" class="review_img">
+                            <h2 class="review_title">Ava Johnson</h2>
+                            <p class="review_description">
+                                This website has a massive variety of
+                                books, covering everything from classics to
+                                the latest releases. It's like a treasure trove
+                                for book lovers, guaranteeing you'll find
+                                something awesome to dive into!
+                            </p>
+
+                            <div class="review_stars">
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-rr-star-sharp-half-stroke"></i>
+                            </div>
+                        </artical>
+
+                        <artical class="review_card swiper-slide">
+                            <img src="PHOTOS/REVIEW/019-woman.png" alt="image" class="review_img">
+                            <h2 class="review_title">Mia Brown</h2>
+                            <p class="review_description">
+                                This website's design is sleek and user-
+                                friendly, making browsing a breeze with its
+                                intuitive layout. It's visually appealing and
+                                easy to navigate, enhancing the overall
+                                book-shopping experience.
+                            </p>
+
+                            <div class="review_stars">
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-rr-star-sharp-half-stroke"></i>
+                            </div>
+                        </artical>
+
+                        <artical class="review_card swiper-slide">
+                            <img src="PHOTOS/REVIEW/018-woman.png" alt="image" class="review_img">
+                            <h2 class="review_title">Isabella Evergreen</h2>
+                            <p class="review_description">
+                                Exploring the vast literary universe at 
+                                BookHive was an absolute delight. The 
+                                seamless navigation, diverse selection, and
+                                swift delivery made my fictional foray
+                                into the world of reading an enchanting
+                                experience with every click.
+                            </p>
+
+                            <div class="review_stars">
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-rr-star-sharp-half-stroke"></i>
+                            </div>
+                        </artical>
+
+                        <artical class="review_card swiper-slide">
+                            <img src="PHOTOS/REVIEW/006-man.png" alt="image" class="review_img">
+                            <h2 class="review_title">Elijah Sterling</h2>
+                            <p class="review_description">
+                                The impeccable quality of the books,
+                                coupled with the engaging narratives,
+                                ensured a captivating literary journey that
+                                left me eagerly anticipating my
+                                next fictional escape.
+                            </p>
+
+                            <div class="review_stars">
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-sr-star"></i>
+                                <i class="fi fi-rr-star-sharp-half-stroke"></i>
+                            </div>
+                        </artical>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="footer_container container grid">
+            <div>
+                <a href="#" class="footer_logo_title">
+                    <img src="WEB ICONS/FAVICON/favicon_io/honeycomb.png">
+                    <h1 class="book">Book</h1>
+                    <h1 class="hive">Hive</h1>
+                </a>
+
+                <p class="footer_description">
+                    Dive into our hive of books and <br>
+                    find your next adventure!
+                </p>
+            </div>
+
+            <div class="footer_data grid">
+                <div>
+                    <h3 class="footer_title">About</h3>
+                    <ul class="footer_links">
+                        <li>
+                            <a href="#" class="footer_link">Awards</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link">Privacy policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link">Terms of Use</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer_link">Cookies Settings</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer_title">Contact</h3>
+                    <ul class="footer_links">
+                        <li>
+                            <address class="footer_info">
+                                123 Bee Street, <br>
+                                Honeycomb City, <br>
+                                Nectarland, BUZZ123
+                            </address>
+                        </li>
+                        <li>
+                            <address class="footer_info">
+                                contact@bookhive.com
+                            </address>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer-title">Social</h3>
+
+                    <div class="footer_social">
+                        <a href="https://en.wikipedia.org/wiki/Facebook" target="_parent" class="footer_social_link">
+                            <i class="fi fi-brands-facebook"></i>
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/Instagram" target="_parent" class="footer_social_link">
+                            <i class="fi fi-brands-instagram"></i>
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/Twitter" target="_parent" class="footer_social_link">
+                            <i class="fi fi-brands-twitter-alt"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--SCROLL UP-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fi fi-rr-angle-small-up"></i>
+    </a>
+
+    <!--MAIN JS-->
+    <script src="JAVASCRIPT/main.js"></script>
+
+    <!--SWIPER JS-->
+    <script src="JAVASCRIPT/swiper-bundle.min.js"></script>
+
+   </body>
+</html>

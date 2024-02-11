@@ -1,0 +1,50 @@
+.new_release_container {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.new_release_card {
+  width: 390px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+  column-gap: 2.5rem;
+  background-color: var(--new-release-background);
+  padding: 1.5rem;
+  color: var(--main-text-color);
+  border-radius: 25px;
+}
+
+.new_release_img {
+  width: 120px;
+  height: 190px;
+  margin-right: 0;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+  transition: box-shadow .4s;
+}
+
+.new_release_img:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.new_release_content {
+  flex-grow: 1;
+}
+
+.new_release_title {
+  font-size: var(--h3-font-size);
+  margin-bottom: .5rem;
+}
+
+.new_release_price {
+  color: var(--main-text-color);
+}
+
+.new_release_stars {
+  color: var(--main-text-color);
+}
